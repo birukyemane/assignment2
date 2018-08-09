@@ -1,0 +1,61 @@
+header{
+  background:#232323;
+}
+
+#headerContainer {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#headerImg {
+  height: 200px;
+  width: 50%;
+}
+
+#headerText {
+  display: inline-block;
+  text-align: left;
+  position: absolute;
+  top: 0;
+  color: darkgrey;;
+}
+
+#headerTitle {
+  font-size: 18px;
+  
+}
+
+emphasis.header {
+  color: white;
+  font-style: italic;
+}
+
+#learnMore {
+  padding: 5px 15px 5px 15px;
+  font-size: 10px;
+  color: white;
+  background: blue;
+}
+
+
+#blueHeader {
+  background: blue;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 15px 10px 15px 50px;
+}
+
+#blueTitle {
+  display: inline;
+  color:white;
+  font-size: 15px;
+}
+
+#getStarted {
+  float: right;
+  font-size: 10px;
+  color:black;
+  background: white;
+  padding: 5px 15px 5px 15px;
+}
