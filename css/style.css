@@ -49,6 +49,19 @@ emphasis.header {
   width: 80%;
   margin: 0 auto;
   padding: 18px 0;
+  position: relative;
+}
+
+.blueHeader::after {  
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 41px solid #4693d9;
+  border-right: 34px solid transparent;
+  position: absolute;
+  bottom: -41px;
+  left: 0;
 }
 
 .blueTitle {
@@ -72,7 +85,7 @@ emphasis.header {
 section {
   width: 80%;
   margin: 29px auto;
-  margin-bottom: 40px;
+  margin-bottom: 78px;
 }
 
 .introClass {
@@ -86,6 +99,23 @@ section {
   text-align: center;
   width: 40%;
   padding: 4%;
+  position: relative;
+}
+
+.introContent:hover{
+  background-color: white;
+}
+
+.introContent:hover::after{
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 50px solid transparent;
+  border-top: 50px solid white;
+  position: absolute;
+  bottom: -49px;
+  left: 0;
 }
 
 .emphContent {
@@ -130,6 +160,18 @@ section {
   margin: 1%;
   background:white;
   box-shadow: 14px 0 22px -10px #333;
+  position: relative;
+}
+
+.recentContent::after {  
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 41px solid white;
+  border-right: 34px solid transparent;
+  position: absolute;
+  bottom: -41px;
 }
 
 .testimonals h3 {
@@ -156,9 +198,6 @@ div.recent {
   font-size: 17px;
 }
 
-#testimonalDev{  
-}
-
 #testimonalContent {
   max-width: 66%;
   display:inline-block;
@@ -172,8 +211,21 @@ div.recent {
   background: white;
   box-sizing: border-box;
   padding: 12px;
-  margin: 0 2% 2% 1%;
+  margin: 0 2% 8% 1%;
   box-shadow:  14px 0 30px -14px #333;
+  position: relative;
+}
+
+.testimonals::after {  
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-top: 41px solid white;
+  border-right: 34px solid transparent;
+  position: absolute;
+  bottom: -41px;
+  left:0;
 }
 
 .testimonals p {
@@ -190,10 +242,13 @@ div.recent {
  box-shadow:  14px 0 30px -14px #333
 }
 
-.devContent {
-  padding: 9px;
+.deveContent {
+  padding: 0 12px;
 }
 
+.deveContent p {
+  margin-top: 5px;
+}
 .tabButton {
   background-color: white;
   border: 0;
